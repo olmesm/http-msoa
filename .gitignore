@@ -7,6 +7,5 @@ package-lock.json
 !.env.sample
 !.env.example
 
-Dockerfile.*
+/Dockerfile*
 !Dockerfile.nginx
-!Dockerfile.template
