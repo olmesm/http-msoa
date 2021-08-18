@@ -2,3 +2,11 @@ node_modules
 conf.d/
 !conf.d/default.conf
 package-lock.json
+
+.env*
+!.env.sample
+!.env.example
+
+Dockerfile.*
+!Dockerfile.nginx
+!Dockerfile.template

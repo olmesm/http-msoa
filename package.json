@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build:config": "node scripts/generate-nginx-conf/index.js",
+    "build-conf:nginx": "node scripts/build-conf/nginx.js",
+    "build-conf:docker": "node scripts/build-conf/docker.js",
+    "build-conf": "npm-run-all build-conf:*",
     "start:user": "micro-dev src/user --port 3000",
     "start:address": "micro-dev src/address --port 3001",
     "start": "npm-run-all -p start:*"

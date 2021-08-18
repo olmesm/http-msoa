@@ -17,8 +17,8 @@ Demonstration on a monorepo'd approad to http msoa optimized for local developme
 # Install Dependencies
 npm install
 
-# Build the nginx configs
-npm run build:config
+# Build the configs and dockerfiles
+npm run build-conf
 
 # Run docker compose
 #   docker-compose up --remove-orphans
