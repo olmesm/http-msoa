@@ -19,8 +19,6 @@ exports.writer = ({ outputFilePathConstructor, templatePath }) => {
   const stringTemplate = fs.readFileSync(templatePath, "utf-8");
   const templater = (data) => lodash.template(stringTemplate)(data);
 
-  const writeConf = (data) =>
+  return (data) =>
     write(outputFilePathConstructor(data.SERVICE), templater(data));
-
-  return writeConf;
 };
