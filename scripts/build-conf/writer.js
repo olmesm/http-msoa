@@ -22,5 +22,5 @@ exports.writer = ({ outputFilePathConstructor, templatePath }) => {
   const writeConf = (data) =>
     write(outputFilePathConstructor(data.SERVICE), templater(data));
 
-  return (serviceList) => serviceList.map(writeConf);
+  return writeConf;
 };

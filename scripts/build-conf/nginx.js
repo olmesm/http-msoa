@@ -8,11 +8,9 @@ const templatePath = path.join(__dirname, "server.conf.template");
 const outputFilePathConstructor = (fileName) =>
   path.join(process.cwd(), "conf.d", `${lodash.kebabCase(fileName)}.conf`);
 
-const main = async () => {
+const main = () => {
   try {
-    await Promise.all(
-      SERVICE_LIST.map(writer({ outputFilePathConstructor, templatePath }))
-    );
+    SERVICE_LIST.map(writer({ outputFilePathConstructor, templatePath }));
 
     process.exit(0);
   } catch (error) {
