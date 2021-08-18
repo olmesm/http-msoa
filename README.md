@@ -6,6 +6,7 @@ Demonstration on a monorepo'd approad to http msoa optimized for local developme
 
 - fallback to defined url (example.com/&lt;service name&gt;)
 - automated config generator
+- automated dockerfile generator
 - common function folder
 
 ## Requires
