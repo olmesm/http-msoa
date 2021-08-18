@@ -2,6 +2,10 @@
 
 Demonstration on a monorepo'd approad to http msoa optimized for local development.
 
+For use in [Proxy Model](https://www.nginx.com/blog/microservices-reference-architecture-nginx-proxy-model/) or [Router Mesh Model](https://www.nginx.com/blog/microservices-reference-architecture-nginx-router-mesh-model/)
+
+![Router Mesh Model](_DOCUMENTATION/router_mesh_model_nginx_microservices_reference_architecture.png)
+
 ## Features
 
 - fallback to defined url (example.com/&lt;service name&gt;)
