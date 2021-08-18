@@ -10,9 +10,7 @@ const outputFilePathConstructor = (fileName) =>
 
 const main = async () => {
   try {
-    await Promise.all(
-      SERVICE_LIST.map(writer({ outputFilePathConstructor, templatePath }))
-    );
+    SERVICE_LIST.map(writer({ outputFilePathConstructor, templatePath }));
 
     process.exit(0);
   } catch (error) {
