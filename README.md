@@ -33,9 +33,11 @@ docker compose up --remove-orphans
 ```bash
 # Start all the services
 npm start
+#   ...then http://localhost:8080/<service name>
 
 # ...or start an individual service
 npm run start:<service name>
+#   ...then http://localhost:8080/<service name>
 ```
 
 ## Todo
