@@ -1,0 +1,28 @@
+{
+  "name": "http-msoa",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build:config": "node scripts/generate-nginx-conf/index.js",
+    "start:user": "micro-dev src/user --port 3000",
+    "start:address": "micro-dev src/address --port 3001",
+    "start": "npm-run-all -p start:*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/olmesm/http-msoa.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/olmesm/http-msoa/issues"
+  },
+  "homepage": "https://github.com/olmesm/http-msoa#readme",
+  "dependencies": {
+    "lodash": "*",
+    "micro-dev": "*",
+    "npm-run-all": "*"
+  }
+}
